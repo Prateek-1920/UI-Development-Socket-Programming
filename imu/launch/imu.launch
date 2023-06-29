@@ -1,0 +1,11 @@
+<launch>
+
+    <node pkg="imu" type="server.py" name="server" output="screen"
+        launch-prefix="gnome-terminal --command">></node>
+    
+    <node name="rviz" pkg="rviz" type="rviz" output="screen" />
+
+</launch>
+
+
+<!-- <node pkg="imu" type="rvizz.py" name="publisher" output="screen"launch-prefix="gnome-terminal command">></node> -->
